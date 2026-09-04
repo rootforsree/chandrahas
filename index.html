@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chandrahas Reddy</title>
+<meta name="description" content="Chandrahas Reddy — personal site.">
+<style>
+  :root{
+    --bg:#0b1020; --card:#141a2e; --ink:#e8ecf6; --muted:#9aa4c0;
+    --accent:#6ea8fe; --accent2:#8b5cf6; --line:#26304d;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1200px 600px at 20% -10%,rgba(110,168,254,.18),transparent),
+               radial-gradient(1000px 500px at 100% 0%,rgba(139,92,246,.16),transparent),
+               var(--bg);
+    color:var(--ink); line-height:1.6; min-height:100vh;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:32px 20px 64px}
+  header{padding:56px 0 24px;text-align:center}
+  .avatar{
+    width:104px;height:104px;border-radius:50%;margin:0 auto 20px;
+    display:grid;place-items:center;font-size:40px;font-weight:700;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    color:#0b1020;box-shadow:0 12px 40px rgba(110,168,254,.35);
+  }
+  h1{font-size:2.2rem;margin:.2em 0 .1em;letter-spacing:-.02em}
+  .tag{color:var(--muted);font-size:1.05rem;margin:0}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:24px 26px;margin:22px 0;box-shadow:0 8px 30px rgba(0,0,0,.25);
+  }
+  h2{font-size:1.15rem;margin:0 0 12px;color:var(--accent)}
+  p{margin:0 0 12px}
+  .muted{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+  .chip{
+    background:rgba(110,168,254,.1);border:1px solid var(--line);
+    border-radius:10px;padding:12px 14px;font-size:.95rem;
+  }
+  .links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:18px}
+  .btn{
+    text-decoration:none;color:var(--ink);border:1px solid var(--line);
+    background:rgba(255,255,255,.03);padding:10px 18px;border-radius:999px;
+    font-size:.95rem;transition:transform .12s ease,border-color .12s ease;
+  }
+  .btn:hover{transform:translateY(-2px);border-color:var(--accent)}
+  footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:36px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">CR</div>
+      <h1>Chandrahas Reddy</h1>
+      <p class="tag">Builder &middot; Learner &middot; Doer</p>
+      <div class="links">
+        <a class="btn" href="mailto:mchandrahasreddy1@gmail.com">Email</a>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>About</h2>
+      <p>Hi, I'm Chandrahas. This is my little corner of the web — a simple,
+      clean place to point people to when they want to reach me or learn a bit
+      about what I'm into.</p>
+      <p class="muted">This starter site was set up as an introduction. Anything
+      here is easy to change — just say what you'd like added.</p>
+    </section>
+
+    <section class="card">
+      <h2>What I care about</h2>
+      <div class="grid">
+        <div class="chip">Building useful things</div>
+        <div class="chip">Learning fast</div>
+        <div class="chip">Good conversations</div>
+        <div class="chip">Getting things done</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Get in touch</h2>
+      <p>The fastest way to reach me is email. Say hi anytime.</p>
+      <div class="links" style="justify-content:flex-start">
+        <a class="btn" href="mailto:mchandrahasreddy1@gmail.com">mchandrahasreddy1@gmail.com</a>
+      </div>
+    </section>
+
+    <footer>
+      Built with care &middot; <span class="muted">powered by root</span>
+    </footer>
+  </div>
+</body>
+</html>
